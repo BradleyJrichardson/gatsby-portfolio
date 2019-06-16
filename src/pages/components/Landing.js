@@ -9,9 +9,11 @@ export default function Landing() {
           <div className="landing-intro">
             Full-stack Web Developer
             <br />
-            Current Student at CoderAcademy
+            Current Student at CoderAcademy <h1> 👨‍💻</h1>
+            <br />
           </div>
         </div>
+        <div className="down-hand">👇</div>
       </div>
     </React.Fragment>
   )

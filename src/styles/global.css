@@ -30,18 +30,15 @@ h1 {
 
 .grid {
   display: flex;
-  flex-wrap: wrap;
-}
-
-.space-around {
-  justify-content: space-around;
 }
 
 .landing-container {
   height: 100vh;
   display: flex;
-  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
+
 .landing-content {
   height: 300px;
 }
@@ -51,10 +48,12 @@ h1 {
   font-size: 3rem;
 }
 
-html {
-  background-color: whitesmoke;
+.down-hand {
+  margin: 0 auto;
+  position: absolute;
+  bottom: 0;
+  font-size: 50px;
 }
-
 .dark {
   color: #dadada;
   background: #1c2022;
@@ -70,14 +69,15 @@ html {
 .btn-clear {
   border: none;
   background: transparent;
+  float: right;
 }
 
 .card {
   margin: 10px 0;
-  width: 250px;
+  width: 200px;
   padding: 20px;
   margin-top: 100px;
-  height: 400px;
+  height: 200px;
 }
 
 .card:hover {
