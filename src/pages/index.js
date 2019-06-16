@@ -2,8 +2,9 @@ import React from "react"
 import Nav from "./components/Nav"
 import Landing from "./components/Landing"
 import { ThemeProvider } from "./components/theme"
+import "../styles/global.css"
 
-class SpaceDashboard extends React.Component {
+class Index extends React.Component {
   state = {
     theme: "light",
     toggleTheme: () => {
@@ -27,4 +28,4 @@ class SpaceDashboard extends React.Component {
   }
 }
 
-export default SpaceDashboard
+export default Index
