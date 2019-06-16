@@ -1,12 +1,14 @@
 import React from "react"
+import { ThemeConsumer } from "./theme"
 
 export default function ProjectCards() {
   return (
-    <React.Fragment>
-      <h1>projects cards</h1>
-      <div>project 1</div>
-      <div>project 2</div>
-      <div>project 3</div>
-    </React.Fragment>
+    <ThemeConsumer>
+      {({ theme }) => (
+        <div className={`card bg-${theme}`}>
+          <h4 className="header-lg center-text">This is a Card</h4>
+        </div>
+      )}
+    </ThemeConsumer>
   )
 }
