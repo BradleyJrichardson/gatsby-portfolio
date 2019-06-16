@@ -11,6 +11,11 @@
 :root {
   font-size: 10px;
 }
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  min-height: 100vh;
+}
 
 html {
   background-color: whitesmoke;
@@ -28,8 +33,7 @@ html {
   min-height: 100%;
 }
 
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  min-height: 100vh;
+.btn-clear {
+  border: none;
+  background: transparent;
 }
