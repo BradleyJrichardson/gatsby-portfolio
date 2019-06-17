@@ -33,14 +33,16 @@ h1 {
 }
 
 .landing-container {
-  height: 100vh;
-  display: flex;
-  align-items: center;
+  height: calc(100vh - 70px);
   width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
 }
 
 .landing-content {
   height: 300px;
+  padding-top: 200px;
 }
 
 .landing-intro {
@@ -50,9 +52,8 @@ h1 {
 
 .down-hand {
   margin: 0 auto;
-  position: absolute;
-  bottom: 0;
   font-size: 50px;
+  width: 40px;
 }
 .dark {
   color: #dadada;
