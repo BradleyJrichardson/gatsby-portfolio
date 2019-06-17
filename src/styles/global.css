@@ -21,11 +21,12 @@ h1 {
   font-family: "Lora", serif;
   font-size: 5rem;
 }
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px 150px;
-  min-height: 100vh;
+  min-height: 5000px;
 }
 
 .grid {
@@ -52,9 +53,10 @@ h1 {
 
 .down-hand {
   margin: 0 auto;
-  font-size: 50px;
+  font-size: 80px;
   width: 40px;
 }
+
 .dark {
   color: #dadada;
   background: #1c2022;
