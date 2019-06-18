@@ -1,7 +1,15 @@
 import React from "react"
 import Sticky from "./Sticky.jsx"
+import Nav from "./Nav"
 import "../../styles/sticky.css"
 import ExampleStuckContent from "./ExampleStuckContent.jsx"
+import {
+  FaLinkedinIn,
+  FaGithubAlt,
+  FaCodeBranch,
+  FaCodepen,
+  FaHackerrank,
+} from "react-icons/fa"
 
 export default function Landing() {
   return (
@@ -16,16 +24,26 @@ export default function Landing() {
             <br />
             <Sticky>
               <ExampleStuckContent>
-                <p>
-                  This is a stickable component. It will get a prop called
-                  "modifiers" containing an array of strings like "stuck-top"
-                  when it's been scrolled out of view.
-                </p>
+                <div className="icon-container">
+                  <FaLinkedinIn color="rgb(255, 215, 0)" size={25} />
+                </div>
+                <div className="icon-container">
+                  <FaGithubAlt color="rgb(255, 215, 0)" size={25} />
+                </div>
+                <div className="icon-container">
+                  <FaCodeBranch color="rgb(255, 215, 0)" size={25} />
+                </div>
+                <div className="icon-container">
+                  <FaCodepen color="rgb(255, 215, 0)" size={25} />
+                </div>
+                <div className="icon-container">
+                  <FaHackerrank color="rgb(255, 215, 0)" size={25} />
+                </div>
+                <Nav />
               </ExampleStuckContent>
             </Sticky>
           </div>
         </div>
-        <div className="down-hand">👇</div>
       </div>
     </React.Fragment>
   )
