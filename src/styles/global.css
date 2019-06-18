@@ -49,6 +49,7 @@ h1 {
 .landing-content {
   height: 300px;
   padding-top: 200px;
+  z-index: 1;
 }
 
 .landing-intro {
@@ -61,22 +62,29 @@ h1 {
   padding-bottom: 10px;
   display: inline;
 }
-.down-hand {
-  margin: 0 auto;
-  font-size: 80px;
-  width: 40px;
-  padding-bottom: 20px;
+
+.particles-dark {
+  background: #1c2022;
+  height: 100vh;
+  position: fixed;
+  z-index: -1;
+}
+.particles-light {
+  background: whitesmoke;
+  height: 100vh;
+  position: fixed;
+  z-index: -1;
 }
 
 .dark {
   color: #dadada;
-  background: #1c2022;
+  /* background: #1c2022; */
   min-height: 100%;
 }
 
 .light {
   color: #1c2022;
-  background: whitesmoke;
+  /* background: whitesmoke; */
   min-height: 100%;
 }
 
@@ -112,10 +120,6 @@ h1 {
   border: 1px black solid;
   display: block;
   height: 50px;
-}
-
-.particle-container {
-  height: 3000px;
 }
 
 .card-information {
@@ -157,13 +161,23 @@ h1 {
 }
 
 @media only screen and (max-width: 580px) {
+  :root {
+    font-size: 6px;
+  }
   .container {
     padding: 20px 30px;
+  }
+
+  .particle-container {
+    display: none;
   }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
+  :root {
+    font-size: 7px;
+  }
   .container {
     padding: 20px 50px;
   }

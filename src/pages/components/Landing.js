@@ -21,6 +21,7 @@ export default function Landing() {
             Full-stack Web Developer
             <br />
             Current Student at CoderAcademy <h1> 👨‍💻</h1>
+            <hr />
             <br />
             <Sticky>
               <ExampleStuckContent>
