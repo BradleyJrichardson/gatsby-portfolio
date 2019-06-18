@@ -1,5 +1,6 @@
 import React from "react"
 import { ThemeConsumer } from "./theme"
+import Image from "./Image"
 
 export default function ProjectCards({ title, about, img, technologies }) {
   return (
@@ -17,7 +18,7 @@ export default function ProjectCards({ title, about, img, technologies }) {
             </div>
 
             <div className="image-container">
-              <img clasName="project-image" src={img} alt="" />
+              <Image src={img} width={500} height={300} mode="fit" />
             </div>
           </div>
         </div>
