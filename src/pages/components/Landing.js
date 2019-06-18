@@ -6,9 +6,8 @@ import ExampleStuckContent from "./ExampleStuckContent.jsx"
 import {
   FaLinkedinIn,
   FaGithubAlt,
-  FaCodeBranch,
-  FaCodepen,
   FaHackerrank,
+  FaPaperclip,
 } from "react-icons/fa"
 
 export default function Landing() {
@@ -32,13 +31,10 @@ export default function Landing() {
                   <FaGithubAlt color="rgb(255, 215, 0)" size={25} />
                 </div>
                 <div className="icon-container">
-                  <FaCodeBranch color="rgb(255, 215, 0)" size={25} />
-                </div>
-                <div className="icon-container">
-                  <FaCodepen color="rgb(255, 215, 0)" size={25} />
-                </div>
-                <div className="icon-container">
                   <FaHackerrank color="rgb(255, 215, 0)" size={25} />
+                </div>
+                <div className="icon-container">
+                  <FaPaperclip color="rgb(255, 215, 0)" size={25} />
                 </div>
                 <Nav />
               </ExampleStuckContent>
