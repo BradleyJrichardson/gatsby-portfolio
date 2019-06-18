@@ -115,19 +115,14 @@ h1 {
   display: flex;
   flex-direction: column;
   height: 350px;
+  justify-content: space-around;
 }
 
 .image-container {
-  width: 100%;
-  border: 1px black solid;
-  display: block;
-  height: 50px;
+  align-self: center;
 }
 
 .card-information {
-  width: 100%;
-  border: 1px black solid;
-  display: block;
   height: 50px;
   font-family: "Montserrat", sans-serif;
   font-size: 12px;
@@ -192,22 +187,6 @@ h1 {
     display: flex;
     flex-direction: row;
     height: 380px;
-  }
-
-  .image-container {
-    width: 100%;
-    background: white;
-    display: block;
-    height: 70%;
-    margin: 20px;
-  }
-
-  .card-information {
-    width: 100%;
-    background: grey;
-    display: block;
-    height: 70%;
-    margin: 20px;
   }
 }
 
