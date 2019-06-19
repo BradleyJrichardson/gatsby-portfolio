@@ -43,14 +43,7 @@ h4 {
 
 .container {
   max-width: 760px;
-  margin: 0 auto;
   padding: 20px 150px;
-  min-height: 5000px;
-}
-
-.grid {
-  display: flex;
-  flex-wrap: wrap;
 }
 
 .space-around {
@@ -61,12 +54,11 @@ h4 {
   height: 100vh;
   width: 100%;
   display: flex;
-  justify-content: space-between;
-  flex-direction: column;
+  flex-direction: row;
 }
 
 .landing-content {
-  height: 300px;
+  height: 100%;
   padding-top: 200px;
   z-index: 1;
 }
@@ -86,12 +78,15 @@ h4 {
 .particles-dark {
   background: #1c2022;
   height: 100vh;
+  width: 100vw;
   position: fixed;
   z-index: -1;
 }
+
 .particles-light {
   background: whitesmoke;
   height: 100vh;
+  width: 100vw;
   position: fixed;
   z-index: -1;
 }
@@ -134,10 +129,13 @@ h4 {
   height: 400px;
   margin-bottom: 20px;
 }
-
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+}
 .card-container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   height: 350px;
   justify-content: space-around;
 }
@@ -203,13 +201,6 @@ h4 {
   :root {
     font-size: 6px;
   }
-  .container {
-    padding: 20px 30px;
-  }
-
-  .particle-container {
-    display: none;
-  }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -218,17 +209,7 @@ h4 {
     font-size: 7px;
   }
   .container {
-    padding: 20px 50px;
-  }
-
-  .landing-container {
-    flex-direction: row;
-  }
-
-  .card-container {
-    display: flex;
-    flex-direction: row;
-    height: 380px;
+    padding: 0px;
   }
 }
 
@@ -239,6 +220,11 @@ h4 {
   }
   .container {
     padding: 20px 70px;
+  }
+
+  .card-container {
+    display: block;
+    height: 350px;
   }
 }
 
@@ -253,8 +239,6 @@ h4 {
 @media only screen and (min-width: 1200px) {
   .container {
     max-width: 1200px;
-    margin: 0 auto;
     padding: 20px 150px;
-    min-height: 100%;
   }
 }

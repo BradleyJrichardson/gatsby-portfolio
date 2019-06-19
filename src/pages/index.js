@@ -4,7 +4,6 @@ import Landing from "./components/Landing"
 import Projects from "./components/Projects"
 import { ThemeProvider } from "./components/theme"
 import "../styles/global.css"
-
 import Particles from "react-particles-js"
 
 const particlesOptionsLight = {
@@ -225,7 +224,7 @@ const particlesOptionsDark = {
       },
     },
   },
-  retina_detect: true,
+  retina_detect: false,
 }
 
 class Index extends React.Component {
