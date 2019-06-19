@@ -24,6 +24,7 @@
     "react-icons": "^3.7.0",
     "react-particles-js": "^2.6.0",
     "react-particles-webgl": "^1.0.4",
+    "react-reveal": "^1.2.2",
     "react-transition-group": "^4.1.1",
     "sass-loader": "^7.1.0"
   },
