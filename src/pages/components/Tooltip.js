@@ -24,6 +24,8 @@ const styles = {
 }
 
 export default function Tooltip({ text, children }) {
+  console.log(children)
+  console.log(text)
   return (
     <Hover>
       {hovering => (
