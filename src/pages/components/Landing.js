@@ -25,13 +25,14 @@ export default function Landing() {
             <Sticky>
               <ExampleStuckContent>
                 <div className="icon-container">
-                  <FaLinkedinIn color="rgb(255, 215, 0)" size={25} />
+                  <a href="             www.linkedin.com/in/bradleyJakeRichardson">
+                    <FaLinkedinIn color="rgb(255, 215, 0)" size={25} />
+                  </a>
                 </div>
                 <div className="icon-container">
-                  <FaGithubAlt color="rgb(255, 215, 0)" size={25} />
-                </div>
-                <div className="icon-container">
-                  <FaHackerrank color="rgb(255, 215, 0)" size={25} />
+                  <a href="https://github.com/BradleyJrichardson">
+                    <FaGithubAlt color="rgb(255, 215, 0)" size={25} />
+                  </a>
                 </div>
                 <div className="icon-container">
                   <FaPaperclip color="rgb(255, 215, 0)" size={25} />

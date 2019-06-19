@@ -9,6 +9,7 @@ import spaceX from "../../images/spaceX.png"
 import teach2learn from "../../images/teach2learn.png"
 import tictactoe from "../../images/tictactoe.png"
 import spaceClient from "../../images/space-client.png"
+import battle from "../../images/battle.png"
 
 export default function Projects() {
   return (
@@ -22,6 +23,8 @@ export default function Projects() {
           lessons="Manipulation of the DOM, interacting with API's"
           type="Personal Project"
           img={Nasa}
+          githublink="https://github.com/BradleyJrichardson/nasa-API-client"
+          livelink="https://distracted-goodall-8fb3e0.netlify.com/"
         ></ProjectCards>
 
         <ProjectCards
@@ -31,6 +34,8 @@ export default function Projects() {
           type="Personal Project"
           technologies="React, Express, CSS"
           img={spaceClient}
+          githublink="https://github.com/BradleyJrichardson/react-hubble-api"
+          livelink="#"
         ></ProjectCards>
 
         <ProjectCards
@@ -40,6 +45,8 @@ export default function Projects() {
           type="Tutorial"
           technologies="Vanilla JS, HTML, Bulma, leaflet.js"
           img={ISS}
+          githublink="https://github.com/BradleyJrichardson/spaceX-API-client"
+          livelink="https://objective-darwin-0b23b4.netlify.com/"
         ></ProjectCards>
 
         <ProjectCards
@@ -49,16 +56,31 @@ export default function Projects() {
           type="Personal Project"
           technologies="Vanilla JS, HTML, Bulma, Axios"
           img={spaceX}
+          githublink="https://github.com/BradleyJrichardson/spaceX-API-client"
+          livelink="https://serene-golick-f43236.netlify.com/"
+        ></ProjectCards>
+
+        <ProjectCards
+          title="Github Battle"
+          about="Allows the user to view most popular repos by category or battle their friends"
+          lessons="React, API's"
+          type="Tutorial"
+          technologies="React"
+          img={battle}
+          githublink="https://github.com/BradleyJrichardson/github-battle"
+          livelink="https://pedantic-agnesi-274c5f.netlify.com/"
         ></ProjectCards>
 
         <ProjectCards
           title="Teach 2 Learn"
-          about="Teach2Learn can be seen as a lesson board. Anyone that makes an account can advertise a lesson. A lesson that will be based on technologies the developer has just used. Any other registered user can email the teacher in order to organise a time for the lesson to take place. The app will provide a platform that connect mentors to students. Allowing them to both gain knowledge from the interaction."
+          about="Teach2Learn can be seen as a lesson board. Anyone that makes an account can advertise a lesson. A lesson that will be based on technologies the developer has just used."
           lessons="Learning an integreting new technologies by reading the documentation"
           type="Bootcamp Project"
           technologies="Ruby on Rails, PostgresSQL, CSS, Bootstrap, Omniauth, Google maps, Geolocation, AWS S3, 
           Mailgun"
           img={teach2learn}
+          githublink=""
+          livelink=""
         ></ProjectCards>
 
         <ProjectCards
@@ -68,6 +90,8 @@ export default function Projects() {
           lessons="Programming logic, DOM manipulation"
           type="Bootcamp Project"
           img={tictactoe}
+          githublink="https://github.com/BradleyJrichardson/tic-tac-toe"
+          livelink="https://condescending-sinoussi-c7ba57.netlify.com/"
         ></ProjectCards>
 
         <ProjectCards
@@ -77,6 +101,8 @@ export default function Projects() {
           lessons="CSS do's and dont's, I abandon this project and took what I learnt and applied it to 'Portfolio 2'"
           type="Bootcamp Project"
           img={portfolio1}
+          githublink="https://github.com/BradleyJrichardson/First-Website"
+          livelink="https://bradleyjrichardson.github.io/First-Website/"
         ></ProjectCards>
 
         <ProjectCards
@@ -86,6 +112,8 @@ export default function Projects() {
           lessons="Flexbox, REM units, CSS variables"
           type="Bootcamp Project"
           img={portfolio2}
+          githublink="https://github.com/BradleyJrichardson/BradleyJrichardson.github.io"
+          livelink="https://bradleyjrichardson.github.io/"
         ></ProjectCards>
 
         <ProjectCards
@@ -95,14 +123,18 @@ export default function Projects() {
           lessons="Working with Bulma/CSS framworks, using JavaScript animation and utility libraries"
           type="Personal Project"
           img={portfolio3}
+          githublink="https://github.com/BradleyJrichardson/portfolio-3"
+          livelink="https://bradleyjrichardson.github.io/portfolio-3/"
         ></ProjectCards>
 
         <ProjectCards
           title="Portfolio 4"
-          about="What your currently viewing, built because react is fun"
-          lessons="Using React"
-          technologies="React"
+          about="What your currently viewing, built because I wanted to make it in Gatsby"
+          lessons="Using React, Gatsby"
+          technologies="React, Gatsby"
           type="Personal Project"
+          githublink="https://github.com/BradleyJrichardson/gatsby-portfolio"
+          livelink=""
         ></ProjectCards>
       </div>
     </React.Fragment>

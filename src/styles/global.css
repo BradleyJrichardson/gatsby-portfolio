@@ -191,6 +191,14 @@ h4 {
   border-radius: 3px;
 }
 
+.project-links-container {
+  display: flex;
+  flex-direction: row;
+}
+.project-links {
+  display: block;
+  padding: 10px;
+}
 @media only screen and (max-width: 580px) {
   :root {
     font-size: 6px;

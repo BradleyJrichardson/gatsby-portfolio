@@ -11,6 +11,8 @@ export default function ProjectCards({
   technologies,
   lessons,
   type,
+  githublink,
+  livelink,
 }) {
   return (
     <ThemeConsumer>
@@ -27,16 +29,16 @@ export default function ProjectCards({
                 <div className="type">{type}</div>
                 <div className="card-sub-heading">Technologies</div>
                 {technologies}
-                <div>
+                <div className="project-links-container ">
                   <Tooltip text="Github">
-                    <span>
+                    <a className="project-links" href={githublink}>
                       <FaGithubAlt color="rgb(255, 215, 0)" size={25} />{" "}
-                    </span>
+                    </a>
                   </Tooltip>
                   <Tooltip text="Live Application">
-                    <span>
+                    <a className="project-links" href={livelink}>
                       <FaSignInAlt color="rgb(255, 215, 0)" size={25} />{" "}
-                    </span>
+                    </a>
                   </Tooltip>
                 </div>
               </div>
