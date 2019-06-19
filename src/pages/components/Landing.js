@@ -1,14 +1,6 @@
 import React from "react"
-import Sticky from "./Sticky.jsx"
 import Nav from "./Nav"
-import "../../styles/sticky.css"
-import ExampleStuckContent from "./ExampleStuckContent.jsx"
-import {
-  FaLinkedinIn,
-  FaGithubAlt,
-  FaHackerrank,
-  FaPaperclip,
-} from "react-icons/fa"
+import { FaLinkedinIn, FaGithubAlt, FaPaperclip } from "react-icons/fa"
 
 export default function Landing() {
   return (
@@ -22,24 +14,20 @@ export default function Landing() {
             Current Student at CoderAcademy <h1> 👨‍💻</h1>
             <hr />
             <br />
-            <Sticky>
-              <ExampleStuckContent>
-                <div className="icon-container">
-                  <a href="             www.linkedin.com/in/bradleyJakeRichardson">
-                    <FaLinkedinIn color="rgb(255, 215, 0)" size={25} />
-                  </a>
-                </div>
-                <div className="icon-container">
-                  <a href="https://github.com/BradleyJrichardson">
-                    <FaGithubAlt color="rgb(255, 215, 0)" size={25} />
-                  </a>
-                </div>
-                <div className="icon-container">
-                  <FaPaperclip color="rgb(255, 215, 0)" size={25} />
-                </div>
-                <Nav />
-              </ExampleStuckContent>
-            </Sticky>
+            <div className="icon-container">
+              <a href="             www.linkedin.com/in/bradleyJakeRichardson">
+                <FaLinkedinIn color="rgb(255, 215, 0)" size={25} />
+              </a>
+            </div>
+            <div className="icon-container">
+              <a href="https://github.com/BradleyJrichardson">
+                <FaGithubAlt color="rgb(255, 215, 0)" size={25} />
+              </a>
+            </div>
+            <div className="icon-container">
+              <FaPaperclip color="rgb(255, 215, 0)" size={25} />
+            </div>
+            <Nav />
           </div>
         </div>
       </div>
