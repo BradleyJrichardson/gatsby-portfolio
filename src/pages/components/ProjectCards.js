@@ -16,23 +16,27 @@ export default function ProjectCards({
   return (
     <ThemeConsumer>
       {({ theme }) => (
-        <div className={`card-${theme} card`}>
-          <Image src={img} width={330} height={280} mode="fit" />
-          <h3>{title}</h3>
-          <div>
-            <div>{about} </div>
-            <h4>Techniques</h4>
-            <div>{lessons}</div>
-            <h4>Type</h4>
-            <div>{type}</div>
-            <div>Technologies</div>
-            {technologies}
-
+        <div className="card-container">
+          <div className={`card-${theme} card`}>
+            <Image src={img} width={330} height={280} mode="fit" />
+            <h3>{title}</h3>
             <div>
-              <FaGithubAlt color="rgb(255, 215, 0)" size={25} />{" "}
-              <a href={githublink}></a>
-              <FaSignInAlt color="rgb(255, 215, 0)" size={25} />{" "}
-              <a href={livelink}></a>
+              <div>{about} </div>
+              <h4>Techniques</h4>
+              <div>{lessons}</div>
+              <h4>Type</h4>
+              <div>{type}</div>
+              <div>Technologies</div>
+              {technologies}
+
+              <div>
+                <a href={githublink}>
+                  <FaGithubAlt color="rgb(255, 215, 0)" size={25} />
+                </a>
+                <a href={livelink}>
+                  <FaSignInAlt color="rgb(255, 215, 0)" size={25} />
+                </a>
+              </div>
             </div>
           </div>
         </div>
