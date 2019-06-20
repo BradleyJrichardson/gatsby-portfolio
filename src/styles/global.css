@@ -19,62 +19,6 @@ font-family: 'Nunito', sans-serif; */
   font-size: 10px;
 }
 
-h1 {
-  font-family: "Lora", serif;
-  font-size: 8rem;
-}
-
-h2 {
-  font-family: "Nunito", sans-serif;
-  font-size: 3rem;
-  padding-top: 13px;
-}
-
-h3 {
-  font-family: "Lora", serif;
-  font-size: 6rem;
-}
-
-h4 {
-  font-family: "Nunito", sans-serif;
-  font-size: 2rem;
-  padding-top: 10px;
-}
-
-.container {
-  max-width: 760px;
-  padding: 20px 150px;
-}
-
-.space-around {
-  justify-content: space-around;
-}
-
-.landing-container {
-  height: 100vh;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-}
-
-.landing-content {
-  height: 100%;
-  padding-top: 200px;
-  z-index: 1;
-}
-
-.landing-intro {
-  font-family: "Nunito", sans-serif;
-  font-size: 3rem;
-}
-
-.icon-container {
-  padding: 5px;
-  padding-left: 20px;
-  padding-bottom: 10px;
-  display: inline;
-}
-
 .particles-dark {
   background: #1c2022;
   height: 100vh;
@@ -91,15 +35,32 @@ h4 {
   z-index: -1;
 }
 
+h1 {
+  font-family: "Lora", serif;
+  font-size: 8rem;
+}
+h2 {
+  font-family: "Lora", serif;
+  font-size: 6rem;
+  padding-top: 13px;
+}
+h3 {
+  font-family: "Nunito", sans-serif;
+  font-size: 4rem;
+}
+h4 {
+  font-family: "Nunito", sans-serif;
+  font-size: 2rem;
+  padding-top: 10px;
+}
+
 .dark {
   color: #dadada;
-  /* background: #1c2022; */
   min-height: 100%;
 }
 
 .light {
   color: #1c2022;
-  /* background: whitesmoke; */
   min-height: 100%;
 }
 
@@ -114,60 +75,6 @@ h4 {
   margin-top: 15px;
 }
 
-.project-header {
-  padding-bottom: 20px;
-}
-
-.card-light {
-  width: 100%;
-  height: 400px;
-  margin-bottom: 20px;
-}
-
-.card-dark {
-  width: 100%;
-  height: 400px;
-  margin-bottom: 20px;
-}
-.grid {
-  display: flex;
-  flex-wrap: wrap;
-}
-.card-container {
-  display: flex;
-  flex-direction: row;
-  height: 350px;
-  justify-content: space-around;
-}
-
-.image-container {
-  align-self: center;
-}
-
-.card-information {
-  font-family: "Montserrat", sans-serif;
-  font-size: 12px;
-  padding: 5px;
-}
-
-.spare-time {
-  width: 50%;
-}
-
-.card-heading {
-  font-family: "Lora", serif;
-  font-size: 30px;
-  padding-top: 20px;
-  padding-left: 30px;
-  height: 50px;
-}
-
-.card-sub-heading {
-  font-family: "Nunito", sans-serif;
-  font-size: 20px;
-  padding-top: 15px;
-}
-
 .card-dark:hover {
   box-shadow: 0 10px 20px rgba(255, 255, 255, 0.08),
     0 6px 6px rgba(255, 255, 255, 0.08);
@@ -179,24 +86,26 @@ h4 {
   /* background: rgba(28, 32, 34, 0.9); */
 }
 
-.bg-dark {
-  background: rgb(36, 40, 42);
-  border-radius: 3px;
+.wrapper {
+  max-width: 960px;
+  padding: 8rem;
 }
 
-.bg-light {
-  background: rgba(0, 0, 0, 0.08);
-  border-radius: 3px;
-}
-
-.project-links-container {
+.landing-page {
+  height: 100vh;
   display: flex;
-  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
-.project-links {
-  display: block;
-  padding: 10px;
+
+.landing-content {
+  margin-bottom: 200px;
 }
+
+.landing-icons {
+  padding-right: 20px;
+}
+
 @media only screen and (max-width: 580px) {
   :root {
     font-size: 6px;
@@ -208,9 +117,6 @@ h4 {
   :root {
     font-size: 7px;
   }
-  .container {
-    padding: 0px;
-  }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -218,27 +124,52 @@ h4 {
   :root {
     font-size: 8px;
   }
-  .container {
-    padding: 20px 70px;
-  }
-
-  .card-container {
-    display: block;
-    height: 350px;
-  }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-  .container {
-    padding: 20px 100px;
+  :root {
+    font-size: 9px;
   }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-  .container {
-    max-width: 1200px;
-    padding: 20px 150px;
+  :root {
+    font-size: 11px;
+  }
+}
+
+/* Waving animation */
+span.wave {
+  padding-left: 20px;
+  animation-name: wave-animation;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  transform-origin: 70% 70%;
+  display: inline-block;
+}
+
+@keyframes wave-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(-10deg);
+  }
+  20% {
+    transform: rotate(12deg);
+  }
+  30% {
+    transform: rotate(-10deg);
+  }
+  40% {
+    transform: rotate(9deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
   }
 }

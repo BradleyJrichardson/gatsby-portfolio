@@ -243,16 +243,14 @@ class Index extends React.Component {
   render() {
     return (
       <ThemeProvider value={this.state}>
-        <div className={this.state.theme}>
-          <Particles
-            className={`particles-${this.state.theme}`}
-            params={this.state.particle}
-          />
-          <div className="container">
-            <Nav />
-            <Landing />
-            <Projects />
-          </div>
+        <Particles
+          className={`particles-${this.state.theme}`}
+          params={this.state.particle}
+        />
+        <div className={`wrapper ${this.state.theme}`}>
+          <Nav />
+          <Landing />
+          <Projects />
         </div>
       </ThemeProvider>
     )

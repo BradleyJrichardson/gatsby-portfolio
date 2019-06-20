@@ -2,7 +2,6 @@ import React from "react"
 import { ThemeConsumer } from "./theme"
 import Image from "./Image"
 import { FaGithubAlt, FaSignInAlt } from "react-icons/fa"
-import Tooltip from "./Tooltip"
 
 export default function ProjectCards({
   title,
@@ -17,33 +16,23 @@ export default function ProjectCards({
   return (
     <ThemeConsumer>
       {({ theme }) => (
-        <div className={`card-${theme} ${theme}`}>
-          <div className="card-container">
-            <div className="spare-time">
-              <div className="card-heading">{title}</div>
-              <div className="card-information">
-                <div className="about">{about} </div>
-                <h2>Techniques</h2>
-                <div className="lessons">{lessons}</div>
-                <h4>Type</h4>
-                <div className="type">{type}</div>
-                <div className="card-sub-heading">Technologies</div>
-                {technologies}
-                <div className="project-links-container ">
-                  <Tooltip text="Github">
-                    <FaGithubAlt color="rgb(255, 215, 0)" size={25} />{" "}
-                    <a className="project-links" href={githublink}></a>
-                  </Tooltip>
-                  <Tooltip text="Live Application">
-                    <FaSignInAlt color="rgb(255, 215, 0)" size={25} />{" "}
-                    <a className="project-links" href={livelink}></a>
-                  </Tooltip>
-                </div>
-              </div>
-            </div>
+        <div className={`card-${theme} card`}>
+          <Image src={img} width={330} height={280} mode="fit" />
+          <h3>{title}</h3>
+          <div>
+            <div>{about} </div>
+            <h4>Techniques</h4>
+            <div>{lessons}</div>
+            <h4>Type</h4>
+            <div>{type}</div>
+            <div>Technologies</div>
+            {technologies}
 
-            <div className="image-container">
-              <Image src={img} width={330} height={280} mode="fit" />
+            <div>
+              <FaGithubAlt color="rgb(255, 215, 0)" size={25} />{" "}
+              <a href={githublink}></a>
+              <FaSignInAlt color="rgb(255, 215, 0)" size={25} />{" "}
+              <a href={livelink}></a>
             </div>
           </div>
         </div>
