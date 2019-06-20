@@ -34,11 +34,13 @@ export default function ProjectCards({
                     <a className="project-links" href={githublink}>
                       <FaGithubAlt color="rgb(255, 215, 0)" size={25} />{" "}
                     </a>
+                    {null}
                   </Tooltip>
                   <Tooltip text="Live Application">
                     <a className="project-links" href={livelink}>
                       <FaSignInAlt color="rgb(255, 215, 0)" size={25} />{" "}
                     </a>
+                    {null}
                   </Tooltip>
                 </div>
               </div>
