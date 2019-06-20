@@ -16,11 +16,9 @@ export default class Hover extends React.Component {
   }
   render() {
     return (
-      <React.Fragment>
-        <div onMouseOver={this.mouseOver} onMouseOut={this.mouseOut}>
-          {this.props.children(this.state.hovering)}
-        </div>
-      </React.Fragment>
+      <div onMouseOver={this.mouseOver} onMouseOut={this.mouseOut}>
+        {this.props.children(this.state.hovering)}
+      </div>
     )
   }
 }
