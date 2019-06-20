@@ -31,16 +31,12 @@ export default function ProjectCards({
                 {technologies}
                 <div className="project-links-container ">
                   <Tooltip text="Github">
-                    <a className="project-links" href={githublink}>
-                      <FaGithubAlt color="rgb(255, 215, 0)" size={25} />{" "}
-                    </a>
-                    {about}
+                    <FaGithubAlt color="rgb(255, 215, 0)" size={25} />{" "}
+                    <a className="project-links" href={githublink}></a>
                   </Tooltip>
                   <Tooltip text="Live Application">
-                    <a className="project-links" href={livelink}>
-                      <FaSignInAlt color="rgb(255, 215, 0)" size={25} />{" "}
-                    </a>
-                    {about}
+                    <FaSignInAlt color="rgb(255, 215, 0)" size={25} />{" "}
+                    <a className="project-links" href={livelink}></a>
                   </Tooltip>
                 </div>
               </div>
