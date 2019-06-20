@@ -5,18 +5,20 @@ import { FaLinkedinIn, FaGithubAlt } from "react-icons/fa"
 export default function Landing() {
   return (
     <div className="landing-page">
-      <Nav />
       <div className="landing-content">
+        {/* hello i am bradley richradson with different fonts */}
         <h1>
           Bradley
           <span className="wave" role="img">
-            {" "}
             👋
           </span>
           <br />
           Richardson
         </h1>
-        <h3>Full-stack Web Developer Current Student at CoderAcademy</h3>
+        <h3>
+          Full-stack Web Developer <br />
+          Current Student at CoderAcademy
+        </h3>
         <a
           className="landing-icons"
           href="https://linkedin.com/in/bradleyJakeRichardson"
