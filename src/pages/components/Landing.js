@@ -1,5 +1,4 @@
 import React from "react"
-import Nav from "./Nav"
 import { FaLinkedinIn, FaGithubAlt } from "react-icons/fa"
 
 export default function Landing() {
