@@ -1,8 +1,8 @@
 import React from "react"
-import Nav from "./components/Nav"
-import Landing from "./components/Landing"
-import Projects from "./components/Projects"
-import { ThemeProvider } from "./components/theme"
+import Nav from "./pages/components/Nav"
+import Landing from "./pages/components/Landing"
+import Projects from "./pages/components/Projects"
+import { ThemeProvider } from "./pages/components/theme"
 import "../styles/global.css"
 import Particles from "react-particles-js"
 
