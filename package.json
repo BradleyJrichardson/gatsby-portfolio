@@ -14,7 +14,7 @@
   },
   "dependencies": {
     "clsx": "^1.0.4",
-    "gatsby": "^2.9.4",
+    "gatsby": "^2.32.13",
     "react": "^16.8.6",
     "react-animations": "^1.0.0",
     "react-dom": "^16.8.6",
